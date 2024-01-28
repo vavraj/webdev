@@ -29,5 +29,6 @@ app.use(function (req, res, next) {
     }
     else {
         numberOfReqFromUser[userId] = 1;
+        next();
     }
 })
